@@ -1,0 +1,45 @@
+pip install aspose-words
+pip install pytesseract
+
+#Libraries import
+import os
+import aspose.words as aw
+import pytesseract
+from PIL import Image
+
+pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+ 
+# Create a new document and a builder
+doc = aw.Document()
+builder = aw.DocumentBuilder(doc)
+
+# Specify the folder where the png files are
+folder = r'C:\Users\John\Pictures'
+
+# Create an empty list to store the image file paths
+images = []
+
+# Iterate over the files in the folder
+for file in os.listdir(folder):
+    # Check if the file has the .png extension
+    if file.endswith('.png'):
+        # Join the folder and file names to get the full path
+        image_file = os.path.join(folder, file)
+        # Append the image file path to the list
+        images.append(image_file)
+
+# Iterate over the list and process each image file
+for image_file in images:
+    # Open the image file and extract the text using pytesseract
+    image = Image.open(image_file)
+    text = pytesseract.image_to_string(image)
+
+    # Add the text to the document
+    builder.write(text)
+
+    # Add a page break
+    builder.insert_break(aw.BreakType.PAGE_BREAK)
+
+# Save and open the document
+doc.save("Output.doc")
+os.startfile("Output.doc")
