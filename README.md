@@ -10,4 +10,4 @@ This Python script extracts text from multiple PNG image files and adds the extr
 Before running the script, make sure you have the following libraries installed, by running:
 - `pip install aspose.words`
 - `pip install pytesseract`
-- `download pytesseract.exe` from 
+- `download pytesseract.exe` from https://github.com/UB-Mannheim/tesseract/wiki
