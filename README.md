@@ -5,7 +5,6 @@ This Python script extracts text from multiple PNG image files and adds the extr
 #Code contains placeholders (load path, image path, output path-default). Replace acording to your own needs.
 
 ## Dependencies
-`Downloaded pytesseract.exe` via Anaconda Distribution
 
 Before running the script, make sure you have the following libraries installed, by running:
 
