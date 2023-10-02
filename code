@@ -1,6 +1,3 @@
-pip install aspose-words
-pip install pytesseract
-
 #Libraries import
 import os
 import aspose.words as aw
