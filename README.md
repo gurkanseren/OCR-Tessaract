@@ -14,3 +14,4 @@ pip install aspose.words pytesseract pandas pillow
 ```
 
 - `Download pytesseract.exe` from https://github.com/UB-Mannheim/tesseract/wiki
+- `Downloaded pytesseract.exe` via Anaconda Distribution
