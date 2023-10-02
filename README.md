@@ -8,6 +8,9 @@ This Python script extracts text from multiple PNG image files and adds the extr
 `Downloaded pytesseract.exe` via Anaconda Distribution
 
 Before running the script, make sure you have the following libraries installed, by running:
-- `pip install aspose.words`
-- `pip install pytesseract`
-- `download pytesseract.exe` from https://github.com/UB-Mannheim/tesseract/wiki
+
+```bash
+pip install aspose.words pytesseract pandas pillow
+```
+
+- `Download pytesseract.exe` from https://github.com/UB-Mannheim/tesseract/wiki
