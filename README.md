@@ -9,7 +9,7 @@ This Python script extracts text from multiple PNG image files and adds the extr
 Before running the script, make sure you have the following libraries installed, by running:
 
 ```bash
-pip install aspose.words pytesseract pandas pillow
+pip install aspose-words pytesseract pandas pillow
 ```
 
 - `Download pytesseract.exe` from https://github.com/UB-Mannheim/tesseract/wiki
